@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import './ProductCard.css';
 
 import Rating from './Rating';
+import CartContext from '../Context/Cart/CartContext';
 
 export default function ProductCard({ product }) {
+    const { addToCart } = useContext(CartContext);
+
     const LANG = window.navigator.language;
     let currencyFormatter = require('currency-formatter');
 
@@ -21,7 +24,7 @@ export default function ProductCard({ product }) {
                         value={product.rating}
                         text={product.numReviews} />
                 </div>
-                <button className='productCard__button'>Add to basket</button>
+                <button className='productCard__button' onClick={() => addToCart(product)}>Add to basket</button>
             </div>
         </div>
     )

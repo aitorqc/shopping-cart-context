@@ -45,7 +45,7 @@ const products = [
       image:
         "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60",
   
-      price: 49.99,
+      price: 499.99,
       rating: 3.5,
       numReviews: 10,
     },
@@ -55,7 +55,7 @@ const products = [
       image:
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjB3YXRjaHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
   
-      price: 29.99,
+      price: 299.99,
       rating: 4,
       numReviews: 12,
     },

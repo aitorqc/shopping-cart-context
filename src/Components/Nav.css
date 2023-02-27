@@ -14,6 +14,8 @@ nav {
 
 .nav__left {
     flex: 1;
+    font-size: 1.4rem;
+    color: orange;
 }
 
 .nav__middle {
@@ -21,7 +23,20 @@ nav {
     flex: 1;
 }
 
+.fas.fa-search {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-right: 5px;
+    color: black;
+}
+
+.fas.fa-search:active {
+    transform: scale(.9);
+}
+
 .input__wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +57,14 @@ input:focus {
     outline: none;
 }
 
+.input__wrapper>:nth-child(2) {
+    width: 2px;
+    height: 28px;
+    position: absolute;
+    right: 38px;
+    background: black;
+}
+
 .nav__right {
     flex: 1;
 }
@@ -53,6 +76,7 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.4rem;
 }
 
 .cart__icon i {
@@ -66,9 +90,10 @@ input:focus {
     background-color: red;
     z-index: 10;
     border-radius: 50%;
-    font-size: 10px;
-    height: 14px;
-    width: 14px;
-    top: -50%;
-    right: -50%;
+    font-size: 14px;
+    font-weight: 600;
+    height: 16px;
+    width: 16px;
+    top: -30%;
+    right: -30%;
 }
